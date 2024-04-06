@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+    <script src="{% static 'js/signup.js' %}"></script>
+</head>
+<body>
+    <form method="post" id="signupform">
+        {% csrf_token %}
+        <p>email</p>
+        <input type="email" name="email" id="email"> 
+        <p>username</p>
+        <input type="text" name="username" id="username"><br>
+        <p>phone</p>
+        <input type="text" name="phone_number" id="phone_number"><br>
+        <p>password</p>
+        <input type="password" name="password" id="password1"><br>
+        <p>confirm password</p>
+        <input type="password" name="confirm_password" id="password2">
+        <br><br>
+        <button type="submit" value="" onclick="checkform()" id="btnMSG">sign up</button>
+    </form>
+    <div id="">
+        <p id="msg">
+            {% for message in messages %}
+                {{message}}<br>
+            {% endfor %}
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/toHome.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div className="scroll-smooth">
+        <div class="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center" style="background-image: 'url(${Background})';
+          height: 400px;">
+            <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+                style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class=" flex h-full items-center justify-center">
+                    <div class="text-white">
+                        <h2 class="mb-4 text-4xl font-semibold">
+                            Paragon Prime Investment(PPI)
+                        </h2>
+                        <h4 class="mb-6 text-xl font-semibold">Trading made easy</h4>
+                        <Link to="/investments">
+                        <button type="button"
+                            class="rounded font-bold border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+                            data-twe-ripple-init data-twe-ripple-color="light">
+                            Invest
+                        </button>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid place-items-center h-[50vh] bg-white">
+            <h1 class="font-bold capitalize text-2xl px-3">Who we are</h1>
+            <p class="px-3">
+                Paragon Prime Investment (PPI) is a reliable and secure investment
+                platform designed to enable it’s users invest funds and receive
+                returns by choosing from any of our various investment plans. It
+                launched officially in March, 2024.
+            </p>
+        </div>
+        <div class="grid place-items-center h-[70vh] bg-blue-500 text-white">
+            <h1 class="font-bold capitalize text-2xl px-3">Why we exist</h1>
+            <p class="px-3">
+                Paragon Prime Investment comes with greater purpose. We focus on our
+                mission of having a positive impact on society. Here at PPI, we
+                understand that a lot of persons have had unpleasant investment
+                experiences in the past. On this note we were moved to provide a safer
+                and a more feasible form of investment plans. Our platform encourages
+                it’s users to earn through the age long culture of saving.
+            </p>
+        </div>
+        <div class="grid place-items-center h-[70vh] bg-white">
+            <h1 class="font-bold capitalize text-2xl px-3">What are our values</h1>
+            <p class="px-3">
+                So you may ask, what makes us different from other investment
+                platforms? Our values is in our brand name. As Paragons, we serve as a
+                model for others. We believe we are different because we do not try to
+                reel you in with outrageous and unrealistic returns on your
+                investments. Our percentage of returns is fair and reasonable with no
+                additional or hidden charges.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

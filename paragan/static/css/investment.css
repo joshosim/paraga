@@ -1,0 +1,70 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.invest-card {
+    position: relative;
+    margin: 0.75rem;
+    border-radius: .5rem;
+    padding: 0.75rem 0;
+    width: 90%;
+    height: 150px;
+    /* shadow-lg */
+}
+
+.invest-card-profit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4;
+    font-weight: bold;
+    padding: 0.75rem;
+}
+
+.invest-card-capital {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.invest-btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    background-color: black;
+    bottom: 0;
+    right: 0;
+    margin: 0.75rem;
+}
+
+.percentage {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 1.25rem;
+    font-size: .9rem;
+    font-weight: normal;
+}
+footer {
+    background-color: black;
+    color: white;
+    display: grid;
+    place-content: center;
+    padding: 1rem 0.75rem;
+}

@@ -7,28 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
-    <!-- <script src="{% static 'js/login.js' %}"></script> -->
 </head>
 
 <body>
+    <nav>
+        <div class="logo" style="width: 4rem;"></div>
+        <div>
+            <div class="menu">Menu</div>
+            <div class="links">
+                <p>Home</p>
+                <p>Dashboard</p>
+                <p>Investments</p>
+                <p>Logout</p>
+            </div>
+        </div>
+    </nav>
     <div>
         <div>
-            <div className="border-b border-black">
-                <img src={Profile} alt="/"
-                    className="object-contain h-[200px] w-[200px] rounded-full border-4 border-black my-4 mx-auto" />
+            <div class="img">
+                <img src='/paragan/static/img/man.png' alt="/" />
             </div>
-            <div className="text-left">
-                <p className="pl-5 py-3 border-black font-semibold text-2xl">
-                    Username : {{user_data.username}}
+            <div class="text-left">
+                <p class="title">
+                    Username
                 </p>
-                <p className="pl-5 py-3 border-b border-black font-light text-xl">
-                    name
+                <p class="pl-5 py-3 border-b border-black font-light text-xl">
+                    {{user_data.username}}
                 </p>
-                <p className="pl-5 py-3 border-black font-semibold text-2xl">Phone</p>
-                <p className="pl-5 py-3 font-light text-xl">phone no.</p>
+                <p class="title">Phone</p>
+                <p class="pl-5 py-3 font-light text-xl"> {{user_data.phone_number}}</p>
             </div>
         </div>
     </div>
+    <footer>
+        <div>
+            <p style="font-weight: bold;">Contact Us:</p>
+            <p>Email: paragonprimeinvestment@gmail.com</p>
+        </div>
+        <p>PPI &copy; 2024</p>
+    </footer>
 </body>
 
 </html>

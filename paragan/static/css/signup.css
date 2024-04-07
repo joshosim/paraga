@@ -30,3 +30,10 @@ button {
     font-weight: bold;
     margin: 1rem auto;
 }
+
+.img {
+    border: 2px solid red;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    color: red;
+}

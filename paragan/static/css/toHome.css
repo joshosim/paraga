@@ -1,0 +1,75 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.home {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem;
+    text-align: center;
+}
+
+.home-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.heading {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    padding: 0 .75rem;
+}
+
+.card {
+    display: grid;
+    place-items: center;
+    height: 50vh;
+}
+
+.card p {
+    padding: 0 0.75rem;
+}
+
+.home-container-landing {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.home-motto {
+    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: grid;
+    place-content: center;
+    padding: 1rem 0.75rem;
+}

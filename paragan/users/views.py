@@ -45,16 +45,18 @@ def signin(request):
 
         if user is not None:
             login(request, user)
-            messages.success(request, 'Login Successfull')
             return redirect('app:dashbaord')
         else:
             messages.error(request, 'Invalid Credentials!!! try again')
-            return redirect('signin')
+            return redirect('users:signin')
         
     if request.user.is_authenticated:
         return redirect('app:dashbaord')
     
     return render(request, 'login.html')
 
-def logout():
-    return None
+def log_out(request):
+    if request.method == "POST":
+        logout(request)
+        return redirect('users:signin')
+    return render(request, 'logout.html')

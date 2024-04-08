@@ -1,3 +1,4 @@
+{% extends 'base.html' %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -6,24 +7,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    {% block extra_css %}
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    {% endblock %}
     <script src="{% static 'js/login.js' %}"></script>
 </head>
 
+{% block content %}
 <body>
-    <h1>Paragon Prime Investment(PPI) </h1>
-    <form action="" method="post" id="form">
-        {% csrf_token %}
-        <label>username</label>
-        <input type="text" id="username" name="username"><br>
-        <label>password</label>
-        <input type="password" name="password" id="password">
+    <div class="container">
+        <div class="second_container">
+            <h1 class="title_head">Welcome</h1>
+            <div class="p_logo_bg">
+                <div class="p_logo">P</div>
+            </div>
+            <form action="" method="post" id="form">
+                {% csrf_token %}
+                
+                <div class="input_bars">
+                    <input type="text" id="username" name="username" placeholder="username">
+                    <input type="password" name="password" id="password" placeholder="password">
+                    <div class="error">
+                        {% for message in messages %}
+                            <p>{{message}}</p>
+                        {% endfor %}
+                    </div>
+                </div>
 
-        <button type="submit" id="btnMSG">Sign In</button>
-        {% for message in messages %}
-        <p id="errorMSG">{{message}}</p>
-        {% endfor %}
-    </form>
+                <div class="btn">
+                    <button type="submit" id="btnMSG">Sign In</button>
+                </div>
+
+                <div class="end_text">
+                    <p>Dont have an accout? Sign Up <a href="{% url 'users:signup' %}">Here</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
+{% endblock content %}
 
 </html>

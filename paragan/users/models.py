@@ -20,7 +20,7 @@ class User(AbstractUser):
     objects = UserManager()
 
 class UserData(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, default=None)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     user_balance = models.DecimalField(default=0.00, decimal_places=2, max_digits=50000)
     user_status = models.CharField(null=True, max_length=5000)
     user_notification = models.CharField(null=True, max_length=3000)

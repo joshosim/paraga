@@ -5,22 +5,6 @@ body {
     place-items: center;
 }
 
-input,
-button,
-label {
-    display: block;
-}
-
-label {
-    text-transform: capitalize;
-}
-
-input {
-    padding: 0.5rem;
-    margin: 0.25rem 0;
-    border-radius: 0.25rem;
-}
-
 button {
     padding: .5rem .75rem;
     width: 100%;
@@ -31,9 +15,95 @@ button {
     margin: 1rem auto;
 }
 
-.img {
-    border: 2px solid red;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
+.container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.second_container {
+    padding: 10px;
+    height: 70%;
+    background: white;
+    width: 60%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+}
+
+.title_head {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    color: rgb(78, 78, 78);
+}
+
+.p_logo_bg {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.p_logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: rgb(78, 78, 78);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 30PX;
+    font-weight: bolder;
+    color: white;
+}
+
+.input_bars {
+    margin-top: 0px;
+    padding: 20px;
+}
+
+.input_bars input {
+    margin-top: 50px;
+    border: none;
+    width: 100%;
+    outline: none;
+    height: 40px;
+    border-bottom: 2px solid rgba(78, 78, 78, 0.459);
+}
+
+.input_bars input::placeholder {
+    margin-bottom: 4px;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.btn {
+    padding: 20px;
+}
+
+.btn button {
+    height: 50px;
+    background: rgb(78, 78, 78);
+    border: none;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.end_text {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.end_text a {
+    color: rgb(78, 78, 78);
+}
+
+.error {
     color: red;
+    font-size: 14px;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
